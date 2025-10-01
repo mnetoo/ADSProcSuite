@@ -6,15 +6,24 @@ import Metodologia from '../../components/Metodologia/Metodologia';
 import Resultados from '../../components/Resultados/Resultados';
 import Conclusao from '../../components/Conclusão/Conclusao';
 import Footer from '../../components/Footer/Footer';
+import Banner from '../../components/Banner/Banner';
 
 const Home = () => {
   return (
     <div className="home-container">
+      
       <Header />
-      <Intro />
-      <Metodologia />
-      <Resultados />
-      <Conclusao />
+
+        <div className="home-content">
+
+          <Banner />
+          <Intro />
+          <Metodologia />
+          <Resultados />
+          <Conclusao />
+          
+        </div>
+
       <Footer />
 
     </div>

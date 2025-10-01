@@ -1,0 +1,163 @@
+.Ferramentas-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+
+.Ferramentas-content {
+  flex: 1;
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.Ferramentas-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.Ferramentas-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Ferramentas-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.Ferramentas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+  align-items: stretch; /* Isso faz os cards se estenderem verticalmente */
+}
+
+.Ferramenta-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Agora ocupa 100% da altura do grid */
+  min-height: 280px; /* Altura mínima para uniformidade */
+  justify-content: space-between; /* Distribui o conteúdo uniformemente */
+}
+
+.Ferramenta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.Ferramenta-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+  flex-shrink: 0; /* Impede que o ícone diminua */
+}
+
+.Ferramenta-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  flex-shrink: 0; /* Mantém o título fixo */
+}
+
+.Ferramenta-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+  flex: 1; /* Ocupa o espaço restante */
+  display: flex;
+  align-items: center; /* Centraliza o texto verticalmente */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .Ferramentas-content {
+    padding: 3rem 1rem;
+  }
+  
+  .Ferramentas-title {
+    font-size: 2rem;
+  }
+  
+  .Ferramentas-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .Ferramentas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .Ferramenta-card {
+    padding: 1.5rem;
+    min-height: 250px; /* Altura menor em mobile */
+  }
+  
+  .Ferramenta-icon {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Ferramentas-content {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+  
+  .Ferramentas-title {
+    font-size: 1.75rem;
+  }
+  
+  .Ferramenta-card {
+    padding: 1.25rem;
+    min-height: 220px; /* Altura ainda menor em telas muito pequenas */
+  }
+  
+  .Ferramenta-title {
+    font-size: 1.2rem;
+  }
+  
+  .Ferramenta-description {
+    font-size: 0.95rem;
+  }
+}

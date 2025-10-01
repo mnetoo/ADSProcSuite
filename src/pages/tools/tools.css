@@ -1,0 +1,19 @@
+.tools-page {
+  min-height: 100vh;
+  width: 100vw; /* força ocupar toda a largura */
+  /*background: linear-gradient(to bottom, #0a1f44, #122a63, #050d21);*/
+  background: #f8fafc;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* para não colar tudo no meio */
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Remove a estrutura duplicada do Ferramentas */
+.Ferramentas-container {
+  min-height: auto;
+  flex: 1;
+}

@@ -1,19 +1,23 @@
 import './Header.css';
+import { useNavigate } from 'react-router-dom';
 
 import LOGO from '../../assets/LogoADS.png';
 
 const Header = () => {
+
+  const navigate = useNavigate();
   return (
     <header className="app-header">
       <nav className="nav-container">
         <a href="/" className="logo-link">
           <img src={LOGO} alt="LogoADS" className="logo-image" />
         </a>
-        <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/sobre">About</a></li>
-          <li><a href="/contato">Contact</a></li>
-        </ul>
+        <nav className="nav-links">
+            <a onClick={() => navigate('/')}>Home</a>
+            <a onClick={() => navigate('/about')}>About</a>
+            <a onClick={() => navigate('/tools')}>Tools</a>
+            <a onClick={() => navigate('/contact')}>Contact</a>
+        </nav>
       </nav>
     </header>
   );
