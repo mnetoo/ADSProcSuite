@@ -79,18 +79,19 @@
   margin-bottom: 1.5rem;
 }
 
-.avatar-placeholder {
+.member-photo {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .member-photo {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 .member-info {
@@ -169,14 +170,6 @@
   text-decoration: underline;
 }
 
-.team-footer {
-  background: white;
-  border-radius: 15px;
-  padding: 2.5rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid #f0f0f0;
-}
-
 .team-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -224,10 +217,9 @@
     min-height: 450px; /* Altura menor em mobile */
   }
   
-  .avatar-placeholder {
+  .member-photo {
     width: 80px;
     height: 80px;
-    font-size: 1.2rem;
   }
   
   .team-stats {

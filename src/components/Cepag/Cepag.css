@@ -75,6 +75,14 @@
   text-align: justify;
 }
 
+.section-description li {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  list-style: disc;
+  margin-left: 50px;
+}
+
 .cepag-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -121,7 +129,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #cbd5e1;
   color: #64748b;
   font-weight: 500;
 }
