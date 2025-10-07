@@ -4,6 +4,7 @@ import Ferramentas from '../../components/Ferramentas/Ferramentas';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Equalizacao from '../../components/Equalização/Equalizacao';
+import Requisitos from '../../components/Requisitos/Requisitos';
 
 const Tools = () => {
   return (
@@ -12,6 +13,7 @@ const Tools = () => {
       < Header />
       <Ferramentas />
       <Equalizacao />
+      <Requisitos />
       < Footer />
     </div>
   );

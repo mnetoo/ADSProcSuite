@@ -15,15 +15,6 @@ const Banner = () => {
           <button className="banner-button">
             TRY IT NOW
           </button>
-          
-          {/* <div className="banner-features">
-            <div className="feature-item">
-              <span className="feature-new">NEW FEAT IN AGISO!</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-shape">SHAPE 2.0</span>
-            </div>
-          </div> */}
         </div>
         
         <div className="banner-video">
@@ -31,7 +22,7 @@ const Banner = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/Imvfxo2pi1Q?start=12"
+              src="https://www.youtube.com/embed/UqjlNS3Ufp4"
               title="ADSProcSuite Demonstration"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
